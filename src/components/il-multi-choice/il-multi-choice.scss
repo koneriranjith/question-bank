@@ -1,0 +1,77 @@
+.il-multi-check {
+  margin-bottom: 1rem;
+  // .check-label {
+  //   margin-bottom: 10px;
+  //   font-size: $fontSize16;
+  //   font-weight: $fontWeight600;
+  //   text-transform: capitalize;
+  // }
+  .multi-check {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &.disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .form-check-input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &.disabled,
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+      &:checked {
+        ~ {
+          .checkmark {
+            background-color: $background-color_3;
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .checkmark {
+      &:after {
+        left: 7px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid $background-color_white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 4px;
+    background-color: $background-color_1;
+    &:after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+  }
+}

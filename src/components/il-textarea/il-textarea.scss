@@ -1,0 +1,37 @@
+.il-textarea {
+  margin-bottom: 1rem;
+  position: relative;
+  .label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-weight: $fontWeight600;
+    font-size: $fontSize16;
+    text-transform: capitalize;
+  }
+  .il-textarea-control {
+    width: 100%;
+    display: block;
+    padding: 0.775rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $ilInputColor;
+    background-color: $background-color_white;
+    background-clip: padding-box;
+    border: 1px solid $ilInputBorderColor;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &.disabled,
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    &:focus-visible {
+      outline: 1px solid $ilInputOutlineColor;
+    }
+  }
+}

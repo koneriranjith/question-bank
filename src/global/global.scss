@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+$appPrimaryColor: #4caf50;
+$appSecondaryColor: #6c757d;
+$background-color_1: #eee;
+$background-color_2: #ccc;
+$background-color_3: #4caf50;
+$background-color_white: #fff;
+$background-color_black: #000;
+// INPUT FIELD COLORS;
+$ilInputColor: #212529;
+$required-color: #ff0000;
+$ilInputBorderColor: #ced4da;
+$ilInputOutlineColor: #ced4da;
+$selectActiveColor: #c3e0c4;
+$selectDropIconColor: #aeaeae;
+$mainDropBorderColor: rgba(76, 175, 80, 0.36);
+$fontSize16: 16px;
+$fontWeight600: 500;
+// MAIN COLORS;
+$mainBackgroundColor: #f3f7fe;
+$navBackgroundColor: #eaedf3;
+$navTextColor: #2f3146;
+$boxShadowColor: rgba(0, 0, 0, 0.05);
+//MIN WIDTHS;
+$minWidth576: 576px;
+$minWidth768: 768px;
+$minWidth992: 992px;
+$minWidth1200: 1200px;
+$minWidth1400: 1400px;

@@ -1,0 +1,84 @@
+.il-address {
+  background: #4caf505c;
+  padding: 5px;
+  border-radius: 12px;
+  margin: 8px 0px;
+  .il-label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .il-search-box {
+    margin-bottom: 1rem;
+    position: relative;
+    .select-label {
+      margin-bottom: 10px;
+      font-size: $fontSize16;
+      font-weight: $fontWeight600;
+      text-transform: capitalize;
+      display: inline-block;
+    }
+    .il-search-control {
+      position: relative;
+      width: 100%;
+      max-height: 50px;
+      display: block;
+      padding: 0.775rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $ilInputColor;
+      background-color: $background-color_white;
+      background-clip: padding-box;
+      border: 1px solid $ilInputBorderColor;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0.375rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      &.disabled,
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+      &:focus-visible {
+        outline: 1px solid $ilInputOutlineColor;
+      }
+    }
+    .select-items {
+      background-color: $background-color_white;
+      border-radius: 0.375rem;
+      list-style: none;
+      position: absolute;
+      width: 100%;
+      z-index: 99;
+      box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.1);
+      padding: 7px 0px 7px 0px;
+      overflow-y: scroll;
+      max-height: 200px;
+      border: 1px solid $ilInputBorderColor;
+      margin-top: 5px;
+      .option {
+        color: $background-color_black;
+        padding: 11px 16px;
+        cursor: pointer;
+        user-select: none;
+        font-size: $fontSize16;
+        &:hover {
+          background-color: $mainBackgroundColor;
+        }
+      }
+      .selected {
+        background-color: $selectActiveColor;
+        color: $background-color_black;
+        padding: 11px 16px;
+        cursor: pointer;
+        user-select: none;
+        font-size: $fontSize16;
+      }
+    }
+  }
+}

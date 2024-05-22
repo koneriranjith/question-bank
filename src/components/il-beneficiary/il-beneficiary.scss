@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+
+.il-beneficiary-addmore {
+  cursor: pointer;
+  color: #2ba84a;
+}
+
+
+
+.inner-elements {
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  padding: 20px;
+
+  .inner-bene {
+    border: 1px solid #ced4da;
+    border-top: 7px solid #2ba84a;
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    .il-beneficiary-remove {
+      cursor: pointer;
+      fill: #dc3545;
+      width: 7%;
+      text-align: right;
+    }
+    .inner-bene-elements {
+      width: 93%;
+    }
+  }
+}
